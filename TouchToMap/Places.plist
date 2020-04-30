@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Clinton School Writers &amp; Artists, M.S. 260</string>
+		<key>Latitude</key>
+		<real>40.73653</real>
+		<key>Longitude</key>
+		<real>-73.9927</real>
+		<key>Description</key>
+		<string>Students who are prepared for college must have an education that encourages them to take risks as they produce and perform. Our college preparatory curriculum develops writers and has built a tight-knit community. Our school develops students who can think analytically and write creatively. Our arts programming builds on our 25 years of experience in visual, performing arts and music on a middle school level. We partner with New Audience and the Whitney Museum as cultural partners. We are a International Baccalaureate (IB) candidate school that offers opportunities to take college courses at neighboring universities.</string>
+		<key>ImageName</key>
+		<string>Clinton School Writers &amp; Artists</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Liberation Diploma Plus High School</string>
+		<key>Latitude</key>
+		<real>40.57698</real>
+		<key>Longitude</key>
+		<real>-73.9854</real>
+		<key>Description</key>
+		<string>The mission of Liberation Diploma Plus High School, in partnership with CAMBA, is to develop the student academically, socially, and emotionally. We will equip students with the skills needed to evaluate their options so that they can make informed and appropriate choices and create personal goals for success. Our year-round model (trimesters plus summer school) provides students the opportunity to gain credits and attain required graduation competencies at an accelerated rate. Our partners offer all students career preparation and college exposure. Students have the opportunity to earn college credit(s). In addition to fulfilling New York City graduation requirements, students are required to complete a portfolio to receive a high school diploma.</string>
+		<key>ImageName</key>
+		<string>Liberation Diploma Plus High School</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Women&apos;s Academy of Excellence</string>
+		<key>Latitude</key>
+		<real>40.81504</real>
+		<key>Longitude</key>
+		<real>-73.8561</real>
+		<key>Description</key>
+		<string>The WomenÂ’s Academy of Excellence is an all-girls public high school, serving grades 9-12. Our mission is to create a community of lifelong learners, to nurture the intellectual curiosity and creativity of young women and to address their developmental needs. The school community cultivates dynamic, participatory learning, enabling students to achieve academic success at many levels, especially in the fields of math, science, and civic responsibility. Our scholars are exposed to a challenging curriculum that encourages them to achieve their goals while being empowered to become young women and leaders. Our Philosophy is GIRLS MATTER!</string>
+		<key>ImageName</key>
+		<string>Women&apos;s Academy of Excellence</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Brooklyn School for Music &amp; Theatre</string>
+		<key>Latitude</key>
+		<real>40.66981</real>
+		<key>Longitude</key>
+		<real>-73.9607</real>
+		<key>Description</key>
+		<string>Brooklyn School for Music &amp; Theatre (BSMT) uses our academic program to accommodate the intellectual, social, and emotional needs of creative high school students. Our vision is to provide a model professional environment where respect is mutual, ideas are shared, and learning is not limited to the classroom. We prepare students for higher education through our rigorous academic program while simultaneously allowing them to develop professional careers in the music and theatre industries.</string>
+		<key>ImageName</key>
+		<string>Brooklyn School for Music &amp; Theatre</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Epic High School - South</string>
+		<key>Latitude</key>
+		<real>40.67502</real>
+		<key>Longitude</key>
+		<real>-73.8167</real>
+		<key>Description</key>
+		<string>Epic High School Â– South, an outgrowth of the NYC Expanded Success Initiative (ESI), provides a rigorous, culturally relevant academic program that prepares students for the demands of college and careers. EpicÂ’s personalized approach to instruction challenges students to dream big and design their futures. It engages students in solving real-world problems and supports their individual progress and growth. Epic students graduate with confidence in their ability to transform the world around them.</string>
+		<key>ImageName</key>
+		<string>Epic High School - South</string>
+	</dict>
+</array>
+</plist>
