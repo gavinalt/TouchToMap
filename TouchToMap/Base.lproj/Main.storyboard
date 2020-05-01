@@ -15,8 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please use FaceID to authenticate access to secured Map" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7V-tG-1TS">
-                                <rect key="frame" x="44" y="172" width="326" height="14.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPo-g9-tFG">
+                                <rect key="frame" x="163" y="800" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalInset">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didClickAuthBtn:" destination="1tk-4G-39V" eventType="touchUpInside" id="yGE-jz-Ily"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a80-gs-tyI">
+                                <rect key="frame" x="164" y="747" width="86.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7V-tG-1TS">
+                                <rect key="frame" x="16" y="700.5" width="382" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -24,13 +54,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="T7V-tG-1TS" firstAttribute="top" secondItem="XB2-eb-zE9" secondAttribute="top" constant="128" id="RiV-mQ-SRM"/>
+                            <constraint firstItem="XB2-eb-zE9" firstAttribute="trailing" secondItem="T7V-tG-1TS" secondAttribute="trailing" constant="16" id="2IV-qW-69w"/>
+                            <constraint firstItem="a80-gs-tyI" firstAttribute="centerX" secondItem="xSf-2B-sva" secondAttribute="centerX" id="DG3-1Y-6qt"/>
+                            <constraint firstItem="gPo-g9-tFG" firstAttribute="centerX" secondItem="xSf-2B-sva" secondAttribute="centerX" id="RSR-ns-g1S"/>
+                            <constraint firstItem="XB2-eb-zE9" firstAttribute="bottom" secondItem="gPo-g9-tFG" secondAttribute="bottom" constant="32" id="TYz-NS-7NJ"/>
                             <constraint firstItem="T7V-tG-1TS" firstAttribute="centerX" secondItem="xSf-2B-sva" secondAttribute="centerX" id="VHv-BF-npo"/>
+                            <constraint firstItem="gPo-g9-tFG" firstAttribute="top" secondItem="a80-gs-tyI" secondAttribute="bottom" constant="32" id="do4-bd-6t5"/>
+                            <constraint firstItem="T7V-tG-1TS" firstAttribute="leading" secondItem="XB2-eb-zE9" secondAttribute="leading" constant="16" id="heS-Xg-VNe"/>
+                            <constraint firstItem="a80-gs-tyI" firstAttribute="top" secondItem="T7V-tG-1TS" secondAttribute="bottom" constant="32" id="xoz-2L-c3h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XB2-eb-zE9"/>
                     </view>
                     <connections>
+                        <outlet property="authBtn" destination="gPo-g9-tFG" id="hYW-m1-882"/>
                         <outlet property="statusLbl" destination="T7V-tG-1TS" id="8Vd-BW-4ol"/>
+                        <outlet property="suggestionLbl" destination="a80-gs-tyI" id="SyW-jK-Ojh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIq-gp-Il8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

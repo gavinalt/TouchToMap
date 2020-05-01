@@ -22,7 +22,6 @@ class Place: NSObject {
         self.desc = description
         self.imageName = imageName
     }
-    
 }
 
 extension Place: MKAnnotation {

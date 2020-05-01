@@ -40,5 +40,11 @@ class MapVC: UIViewController {
 }
 
 extension MapVC: MKMapViewDelegate {
-    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let markerAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation) as? PlaceMapMarker,
+            let place = annotation as? Place else { return nil }
+        
+        markerAnnotationView.configureView(basedOn: place)
+        return markerAnnotationView
+    }
 }

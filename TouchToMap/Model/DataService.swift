@@ -16,11 +16,11 @@ class DataService {
         var places: [Place] = []
         for property in entries {
             guard let name = property["Name"] as? String,
-                let latitude = property["Latitude"] as? NSNumber,
-                let longitude = property["Longitude"] as? NSNumber,
+                let latitude = property["Latitude"] as? Double,
+                let longitude = property["Longitude"] as? Double,
                 let description = property["Description"] as? String,
                 let imageName = property["ImageName"] as? String else { fatalError("Error reading data") }
-            let place = Place.init(name: name, latitude: latitude.doubleValue, longitude: longitude.doubleValue, description: description, imageName: imageName)
+            let place = Place.init(name: name, latitude: latitude, longitude: longitude, description: description, imageName: imageName)
             places.append(place)
         }
         
